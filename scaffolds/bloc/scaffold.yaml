@@ -1,0 +1,49 @@
+name: bloc architecture
+description: A scaffold with clean architecture and bloc
+author: Alfredo Bautista <alfredobautista1@gmail.com>
+
+structure:
+  - data_access:
+    - factories
+    - repositories 
+    - services
+  - dependency_injection:
+    - registers
+  - device:
+    - registers
+  - domain:
+    - blocs
+    - entities 
+    - errors
+    - factories
+    - interactors
+    - repositories
+    - services
+  - environments:
+  - ui:
+    - widgets
+   
+test_structure:
+  - domain:
+    - blocs
+    - interactors
+    - repositories
+    - services
+  - ui:
+    - widgets
+
+dependencies: 
+  flutter_bloc: ^6.0.5
+  freezed_annotation: ^0.12.0
+  lumberdash: ^2.1.1
+  colorize_lumberdash: ^2.1.0
+  json_annotation: ^3.0.1
+  chopper: ^3.0.2
+  injector: ^1.0.9
+   
+dev_dependencies:
+  build_runner:
+  freezed:
+  bloc_test:
+  mockito:
+  json_serializable:
