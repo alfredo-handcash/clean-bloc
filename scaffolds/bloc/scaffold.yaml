@@ -48,6 +48,3 @@ dev_dependencies:
   mockito:
   json_serializable:
   chopper_generator:
-
-flutter_intl:
-  enabled: true
